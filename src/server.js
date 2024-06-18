@@ -55,7 +55,7 @@ const main = async () => {
 
 main();
 
-app.listen(8000, (err) => {
+app.listen(process.env.PORT, (err) => {
   if (err) {
     console.log("error in starting nodejs server");
   }
